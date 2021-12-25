@@ -11,6 +11,7 @@
 		D62CE174277616C1005C58E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CE173277616C1005C58E7 /* ContentView.swift */; };
 		D62CE176277616C2005C58E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D62CE175277616C2005C58E7 /* Assets.xcassets */; };
 		D62CE179277616C2005C58E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D62CE178277616C2005C58E7 /* Preview Assets.xcassets */; };
+		D62CE18027771696005C58E7 /* ExamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CE17F27771696005C58E7 /* ExamplesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		D62CE173277616C1005C58E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D62CE175277616C2005C58E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D62CE178277616C2005C58E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D62CE17F27771696005C58E7 /* ExamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				D62CE171277616C1005C58E7 /* GuessTheFlagApp.swift */,
 				D62CE173277616C1005C58E7 /* ContentView.swift */,
+				D62CE17F27771696005C58E7 /* ExamplesView.swift */,
 				D62CE175277616C2005C58E7 /* Assets.xcassets */,
 				D62CE177277616C2005C58E7 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D62CE18027771696005C58E7 /* ExamplesView.swift in Sources */,
 				D62CE174277616C1005C58E7 /* ContentView.swift in Sources */,
 				D62CE172277616C1005C58E7 /* GuessTheFlagApp.swift in Sources */,
 			);

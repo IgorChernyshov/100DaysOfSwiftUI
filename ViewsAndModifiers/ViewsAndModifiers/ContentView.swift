@@ -16,6 +16,7 @@ struct ContentView: View {
 			Text("Hufflepuff")
 			Text("Ravenclaw")
 			Text("Slytherin")
+				.prominent()
 
 			Text("Hello, world!")
 				.padding()

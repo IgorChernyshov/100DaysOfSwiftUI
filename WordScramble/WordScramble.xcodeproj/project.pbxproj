@@ -11,7 +11,7 @@
 		D6A793D82786D416001BB363 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A793D72786D416001BB363 /* ContentView.swift */; };
 		D6A793DA2786D418001BB363 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6A793D92786D418001BB363 /* Assets.xcassets */; };
 		D6A793DD2786D418001BB363 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6A793DC2786D418001BB363 /* Preview Assets.xcassets */; };
-		D6A793E42786E1E8001BB363 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = D6A793E32786E1E8001BB363 /* start.txt */; };
+		D6A793E42786E1E8001BB363 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = D6A793E32786E1E8001BB363 /* words.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,7 @@
 		D6A793D72786D416001BB363 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D6A793D92786D418001BB363 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6A793DC2786D418001BB363 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D6A793E32786E1E8001BB363 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
+		D6A793E32786E1E8001BB363 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 		D6A793E52786E1ED001BB363 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D6A793E32786E1E8001BB363 /* start.txt */,
+				D6A793E32786E1E8001BB363 /* words.txt */,
 				D6A793D92786D418001BB363 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -137,7 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6A793DD2786D418001BB363 /* Preview Assets.xcassets in Resources */,
-				D6A793E42786E1E8001BB363 /* start.txt in Resources */,
+				D6A793E42786E1E8001BB363 /* words.txt in Resources */,
 				D6A793DA2786D418001BB363 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

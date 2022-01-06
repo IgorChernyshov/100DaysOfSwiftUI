@@ -13,6 +13,7 @@ struct ContentView: View {
 	@State private var usedWords = [String]()
 	@State private var rootWord = ""
 	@State private var newWord = ""
+	@State private var score = 0
 
 	@State private var errorTitle = ""
 	@State private var errorMessage = ""
@@ -28,7 +29,7 @@ struct ContentView: View {
 						.textInputAutocapitalization(.never)
 				}
 
-				Section {
+				Section("Your score: \(score)") {
 					ForEach(usedWords, id: \.self) { word in
 						HStack {
 							Image(systemName: "\(word.count).circle")
@@ -38,6 +39,14 @@ struct ContentView: View {
 				}
 			}
 			.navigationTitle(rootWord)
+			.toolbar {
+				Button {
+					restartGame()
+				} label: {
+					Image(systemName: "arrow.clockwise")
+				}
+
+			}
 		}
 		.onSubmit(addNewWord)
 		.onAppear(perform: startGame)
@@ -64,10 +73,25 @@ struct ContentView: View {
 		rootWord = allWords.randomElement() ?? "silkworm"
 	}
 
+	private func restartGame() {
+		usedWords.removeAll()
+		newWord = ""
+		startGame()
+	}
+
 	private func addNewWord() {
 		let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
-		guard answer.count > 0 else { return }
-		
+
+		guard !isRootWord(word: answer) else {
+			showWordError(title: "This is a root word", message: "Make other words using letters from the root word")
+			return
+		}
+
+		guard isLongerThanTwoLetters(word: answer) else {
+			showWordError(title: "Word is shorter than two letters", message: "Try to make longer words")
+			return
+		}
+
 		guard isOriginal(word: answer) else {
 			showWordError(title: "Word used already", message: "Be more original")
 			return
@@ -85,11 +109,28 @@ struct ContentView: View {
 
 		withAnimation {
 			usedWords.insert(answer, at: 0)
+			updateScore()
 		}
 		newWord = ""
 	}
 
+	private func updateScore() {
+		var newScore = 0
+		usedWords.forEach { word in
+			newScore += word.count * word.count
+		}
+		score = newScore
+	}
+
 	// MARK: - Words checks
+	private func isRootWord(word: String) -> Bool {
+		word == rootWord
+	}
+
+	private func isLongerThanTwoLetters(word: String) -> Bool {
+		word.count > 2
+	}
+
 	private func isOriginal(word: String) -> Bool {
 		!usedWords.contains(word)
 	}

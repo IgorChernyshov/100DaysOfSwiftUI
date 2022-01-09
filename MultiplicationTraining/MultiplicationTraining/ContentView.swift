@@ -31,8 +31,8 @@ struct ContentView: View {
 					}
 
 					Picker("Select number of questions", selection: $numberOfQuestions) {
-						ForEach(1..<5) {
-							Text("\($0 * 5)").tag($0 * 5)
+						ForEach(1..<10) {
+							Text("\($0 + 1)").tag($0 + 1)
 						}
 					}
 
@@ -47,7 +47,13 @@ struct ContentView: View {
 						}
 					}
 				case .ended:
-					Text("Game Over Stuff")
+					Text("You scored \(score)")
+					Button(action: restart) {
+						HStack(spacing: 5) {
+							Image(systemName: "arrow.counterclockwise")
+							Text("Restart")
+						}
+					}
 				}
 			}
 			.navigationTitle(gameState == .settings ? "Settings" : gameState == .playing ? "Training" : "Session Ended")
@@ -68,11 +74,16 @@ struct ContentView: View {
 		}
 	}
 
+	private func restart() {
+		resetState()
+		gameState = .settings
+	}
+
 	// MARK: - Helpers
 	private func makeQuestions() {
 		while questions.count < numberOfQuestions {
-			let firstMultiplier = Int.random(in: 1...maximumMultiplier)
-			let secondMultiplier = Int.random(in: 1...12)
+			let firstMultiplier = Int.random(in: 2...maximumMultiplier)
+			let secondMultiplier = Int.random(in: 2...12)
 			questions.insert(Question(firstMultiplier: firstMultiplier, secondMultiplier: secondMultiplier))
 		}
 	}
@@ -82,6 +93,14 @@ struct ContentView: View {
 			score += 1
 		}
 		answer = ""
+	}
+
+	private func resetState() {
+		maximumMultiplier = 2
+		numberOfQuestions = 5
+		questions.removeAll()
+		answer = ""
+		score = 0
 	}
 }
 

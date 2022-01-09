@@ -12,6 +12,7 @@
 		D6A7941D278B276C001BB363 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6A7941C278B276C001BB363 /* Assets.xcassets */; };
 		D6A79420278B276C001BB363 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6A7941F278B276C001BB363 /* Preview Assets.xcassets */; };
 		D6A79427278B29CC001BB363 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A79426278B29CC001BB363 /* GameState.swift */; };
+		D6A7942B278B39B7001BB363 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A7942A278B39B7001BB363 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		D6A7941C278B276C001BB363 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6A7941F278B276C001BB363 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D6A79426278B29CC001BB363 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		D6A7942A278B39B7001BB363 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				D6A79418278B2769001BB363 /* MultiplicationTrainingApp.swift */,
 				D6A7941A278B2769001BB363 /* ContentView.swift */,
 				D6A79426278B29CC001BB363 /* GameState.swift */,
+				D6A7942A278B39B7001BB363 /* Question.swift */,
 				D6A7941C278B276C001BB363 /* Assets.xcassets */,
 				D6A7941E278B276C001BB363 /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6A79427278B29CC001BB363 /* GameState.swift in Sources */,
+				D6A7942B278B39B7001BB363 /* Question.swift in Sources */,
 				D6A7941B278B2769001BB363 /* ContentView.swift in Sources */,
 				D6A79419278B2769001BB363 /* MultiplicationTrainingApp.swift in Sources */,
 			);

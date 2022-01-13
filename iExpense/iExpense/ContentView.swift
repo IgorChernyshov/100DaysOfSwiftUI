@@ -16,20 +16,25 @@ struct ContentView: View {
     var body: some View {
 		NavigationView {
 			List {
-				ForEach(expenses.items) { item in
-					HStack {
-						VStack(alignment: .leading) {
-							Text(item.name)
-								.font(.headline)
-							Text(item.type)
+				ForEach(["Business", "Personal"], id: \.self) { category in
+					Section(category) {
+						ForEach(expenses.items.filter { category == $0.type }) { item in
+							HStack {
+								VStack(alignment: .leading) {
+									Text(item.name)
+										.font(.headline)
+									Text(item.type)
+								}
+
+								Spacer()
+
+								Text(item.amount, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+									.coloredAmount(amount: item.amount)
+							}
 						}
-
-						Spacer()
-
-						Text(item.amount, format: .currency(code: "USD"))
+						.onDelete(perform: removeItems)
 					}
 				}
-				.onDelete(perform: removeItems)
 			}
 			.navigationTitle("iExpense")
 			.toolbar {

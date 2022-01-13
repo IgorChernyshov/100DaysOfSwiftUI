@@ -15,6 +15,7 @@
 		D6E0342E278F443B0026E540 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E0342D278F443B0026E540 /* ExpenseItem.swift */; };
 		D6E03430278F44650026E540 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E0342F278F44650026E540 /* Expenses.swift */; };
 		D6E03432278F47E10026E540 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E03431278F47E10026E540 /* AddView.swift */; };
+		D6E03434279005060026E540 /* ColoredAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E03433279005060026E540 /* ColoredAmount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		D6E0342D278F443B0026E540 /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
 		D6E0342F278F44650026E540 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
 		D6E03431278F47E10026E540 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		D6E03433279005060026E540 /* ColoredAmount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredAmount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				D6E03431278F47E10026E540 /* AddView.swift */,
 				D6E0342F278F44650026E540 /* Expenses.swift */,
 				D6E0342D278F443B0026E540 /* ExpenseItem.swift */,
+				D6E03433279005060026E540 /* ColoredAmount.swift */,
 				D6456D01278DDA560099EBF8 /* GuidedContentView.swift */,
 				D6456D03278DDA570099EBF8 /* Assets.xcassets */,
 				D6456D05278DDA570099EBF8 /* Preview Content */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E03434279005060026E540 /* ColoredAmount.swift in Sources */,
 				D6E03430278F44650026E540 /* Expenses.swift in Sources */,
 				D6456D02278DDA560099EBF8 /* GuidedContentView.swift in Sources */,
 				D6E03432278F47E10026E540 /* AddView.swift in Sources */,

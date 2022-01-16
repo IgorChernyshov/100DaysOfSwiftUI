@@ -14,6 +14,12 @@
 		D66EA8ED279405F500DEF6A5 /* NavigationLinkExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66EA8EC279405F500DEF6A5 /* NavigationLinkExample.swift */; };
 		D66EA8EF279408DC00DEF6A5 /* GridExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66EA8EE279408DC00DEF6A5 /* GridExample.swift */; };
 		D66EA8F127940A0D00DEF6A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66EA8F027940A0D00DEF6A5 /* ContentView.swift */; };
+		D66EA8F627940C1F00DEF6A5 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = D66EA8F427940C1F00DEF6A5 /* missions.json */; };
+		D66EA8F727940C1F00DEF6A5 /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = D66EA8F527940C1F00DEF6A5 /* astronauts.json */; };
+		D66EA8F927940C7200DEF6A5 /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66EA8F827940C7200DEF6A5 /* Astronaut.swift */; };
+		D66EA8FB27940E0500DEF6A5 /* Bundle+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66EA8FA27940E0500DEF6A5 /* Bundle+Decodable.swift */; };
+		D66EA9002794103F00DEF6A5 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66EA8FF2794103F00DEF6A5 /* Mission.swift */; };
+		D66EA9022794179E00DEF6A5 /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66EA9012794179E00DEF6A5 /* Color+Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +31,12 @@
 		D66EA8EC279405F500DEF6A5 /* NavigationLinkExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkExample.swift; sourceTree = "<group>"; };
 		D66EA8EE279408DC00DEF6A5 /* GridExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridExample.swift; sourceTree = "<group>"; };
 		D66EA8F027940A0D00DEF6A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D66EA8F427940C1F00DEF6A5 /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
+		D66EA8F527940C1F00DEF6A5 /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
+		D66EA8F827940C7200DEF6A5 /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
+		D66EA8FA27940E0500DEF6A5 /* Bundle+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Decodable.swift"; sourceTree = "<group>"; };
+		D66EA8FF2794103F00DEF6A5 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		D66EA9012794179E00DEF6A5 /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +71,10 @@
 			children = (
 				D66EA8DE279401B300DEF6A5 /* MoonshotApp.swift */,
 				D66EA8F027940A0D00DEF6A5 /* ContentView.swift */,
-				D66EA8EE279408DC00DEF6A5 /* GridExample.swift */,
-				D66EA8EC279405F500DEF6A5 /* NavigationLinkExample.swift */,
-				D66EA8E0279401B300DEF6A5 /* ScrollViewExample.swift */,
-				D66EA8E2279401B400DEF6A5 /* Assets.xcassets */,
+				D66EA903279417A200DEF6A5 /* Extensions */,
+				D66EA8FC27940FD100DEF6A5 /* Models */,
+				D66EA8F227940BB500DEF6A5 /* Resources */,
+				D66EA8F327940BBF00DEF6A5 /* Examples */,
 				D66EA8E4279401B400DEF6A5 /* Preview Content */,
 			);
 			path = Moonshot;
@@ -74,6 +86,44 @@
 				D66EA8E5279401B400DEF6A5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D66EA8F227940BB500DEF6A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D66EA8E2279401B400DEF6A5 /* Assets.xcassets */,
+				D66EA8F527940C1F00DEF6A5 /* astronauts.json */,
+				D66EA8F427940C1F00DEF6A5 /* missions.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D66EA8F327940BBF00DEF6A5 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				D66EA8EE279408DC00DEF6A5 /* GridExample.swift */,
+				D66EA8EC279405F500DEF6A5 /* NavigationLinkExample.swift */,
+				D66EA8E0279401B300DEF6A5 /* ScrollViewExample.swift */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		D66EA8FC27940FD100DEF6A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D66EA8F827940C7200DEF6A5 /* Astronaut.swift */,
+				D66EA8FF2794103F00DEF6A5 /* Mission.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D66EA903279417A200DEF6A5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D66EA8FA27940E0500DEF6A5 /* Bundle+Decodable.swift */,
+				D66EA9012794179E00DEF6A5 /* Color+Theme.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +185,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D66EA8E6279401B400DEF6A5 /* Preview Assets.xcassets in Resources */,
+				D66EA8F627940C1F00DEF6A5 /* missions.json in Resources */,
 				D66EA8E3279401B400DEF6A5 /* Assets.xcassets in Resources */,
+				D66EA8F727940C1F00DEF6A5 /* astronauts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +201,11 @@
 				D66EA8E1279401B300DEF6A5 /* ScrollViewExample.swift in Sources */,
 				D66EA8F127940A0D00DEF6A5 /* ContentView.swift in Sources */,
 				D66EA8DF279401B300DEF6A5 /* MoonshotApp.swift in Sources */,
+				D66EA9022794179E00DEF6A5 /* Color+Theme.swift in Sources */,
+				D66EA8F927940C7200DEF6A5 /* Astronaut.swift in Sources */,
 				D66EA8EF279408DC00DEF6A5 /* GridExample.swift in Sources */,
+				D66EA9002794103F00DEF6A5 /* Mission.swift in Sources */,
+				D66EA8FB27940E0500DEF6A5 /* Bundle+Decodable.swift in Sources */,
 				D66EA8ED279405F500DEF6A5 /* NavigationLinkExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

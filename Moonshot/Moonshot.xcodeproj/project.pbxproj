@@ -20,6 +20,8 @@
 		D66EA8FB27940E0500DEF6A5 /* Bundle+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66EA8FA27940E0500DEF6A5 /* Bundle+Decodable.swift */; };
 		D66EA9002794103F00DEF6A5 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66EA8FF2794103F00DEF6A5 /* Mission.swift */; };
 		D66EA9022794179E00DEF6A5 /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66EA9012794179E00DEF6A5 /* Color+Theme.swift */; };
+		D66EA9072794801200DEF6A5 /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66EA9062794801200DEF6A5 /* MissionView.swift */; };
+		D66EA9092794851600DEF6A5 /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66EA9082794851600DEF6A5 /* AstronautView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		D66EA8FA27940E0500DEF6A5 /* Bundle+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Decodable.swift"; sourceTree = "<group>"; };
 		D66EA8FF2794103F00DEF6A5 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		D66EA9012794179E00DEF6A5 /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
+		D66EA9062794801200DEF6A5 /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
+		D66EA9082794851600DEF6A5 /* AstronautView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 			children = (
 				D66EA8DE279401B300DEF6A5 /* MoonshotApp.swift */,
 				D66EA8F027940A0D00DEF6A5 /* ContentView.swift */,
+				D66EA9062794801200DEF6A5 /* MissionView.swift */,
+				D66EA9082794851600DEF6A5 /* AstronautView.swift */,
 				D66EA903279417A200DEF6A5 /* Extensions */,
 				D66EA8FC27940FD100DEF6A5 /* Models */,
 				D66EA8F227940BB500DEF6A5 /* Resources */,
@@ -204,9 +210,11 @@
 				D66EA9022794179E00DEF6A5 /* Color+Theme.swift in Sources */,
 				D66EA8F927940C7200DEF6A5 /* Astronaut.swift in Sources */,
 				D66EA8EF279408DC00DEF6A5 /* GridExample.swift in Sources */,
+				D66EA9092794851600DEF6A5 /* AstronautView.swift in Sources */,
 				D66EA9002794103F00DEF6A5 /* Mission.swift in Sources */,
 				D66EA8FB27940E0500DEF6A5 /* Bundle+Decodable.swift in Sources */,
 				D66EA8ED279405F500DEF6A5 /* NavigationLinkExample.swift in Sources */,
+				D66EA9072794801200DEF6A5 /* MissionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

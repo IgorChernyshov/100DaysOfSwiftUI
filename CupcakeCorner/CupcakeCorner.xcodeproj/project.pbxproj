@@ -16,6 +16,9 @@
 		D66AE2C827A1690C0068CC00 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66AE2C727A1690C0068CC00 /* Result.swift */; };
 		D66AE2D027A1C9C10068CC00 /* ListControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66AE2CF27A1C9C10068CC00 /* ListControlView.swift */; };
 		D66AE2D227A1C9CA0068CC00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66AE2D127A1C9CA0068CC00 /* ContentView.swift */; };
+		D66AE2D527A1CC640068CC00 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66AE2D427A1CC640068CC00 /* Order.swift */; };
+		D66AE2D727A1CDF80068CC00 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66AE2D627A1CDF80068CC00 /* AddressView.swift */; };
+		D66AE2D927A1CEAB0068CC00 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66AE2D827A1CEAB0068CC00 /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		D66AE2C727A1690C0068CC00 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		D66AE2CF27A1C9C10068CC00 /* ListControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListControlView.swift; sourceTree = "<group>"; };
 		D66AE2D127A1C9CA0068CC00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D66AE2D427A1CC640068CC00 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		D66AE2D627A1CDF80068CC00 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		D66AE2D827A1CEAB0068CC00 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 			children = (
 				D66AE2B527A15E7C0068CC00 /* CupcakeCornerApp.swift */,
 				D66AE2D127A1C9CA0068CC00 /* ContentView.swift */,
+				D66AE2D827A1CEAB0068CC00 /* CheckoutView.swift */,
+				D66AE2D427A1CC640068CC00 /* Order.swift */,
+				D66AE2D627A1CDF80068CC00 /* AddressView.swift */,
 				D66AE2D327A1C9CF0068CC00 /* Examples */,
 				D66AE2B927A15E7E0068CC00 /* Assets.xcassets */,
 				D66AE2BB27A15E7E0068CC00 /* Preview Content */,
@@ -162,8 +171,11 @@
 			files = (
 				D66AE2C627A168FA0068CC00 /* Response.swift in Sources */,
 				D66AE2C827A1690C0068CC00 /* Result.swift in Sources */,
+				D66AE2D927A1CEAB0068CC00 /* CheckoutView.swift in Sources */,
+				D66AE2D527A1CC640068CC00 /* Order.swift in Sources */,
 				D66AE2D227A1C9CA0068CC00 /* ContentView.swift in Sources */,
 				D66AE2D027A1C9C10068CC00 /* ListControlView.swift in Sources */,
+				D66AE2D727A1CDF80068CC00 /* AddressView.swift in Sources */,
 				D66AE2B827A15E7C0068CC00 /* NetworkLoadView.swift in Sources */,
 				D66AE2B627A15E7C0068CC00 /* CupcakeCornerApp.swift in Sources */,
 				D66AE2C427A15F410068CC00 /* User.swift in Sources */,

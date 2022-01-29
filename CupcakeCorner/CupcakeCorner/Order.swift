@@ -31,8 +31,11 @@ final class Order: ObservableObject, Codable {
 	@Published var zip = ""
 
 	var hasValidAddress: Bool {
-		if name.isEmpty || streetAddress.isEmpty || city.isEmpty || zip.isEmpty { return false }
-		return true
+		isValid(field: name) && isValid(field: streetAddress) && isValid(field: city) && isValid(field: zip)
+	}
+
+	private func isValid(field: String) -> Bool {
+		!field.isEmpty && !field.allSatisfy { $0 == " " }
 	}
 
 	var cost: Double {

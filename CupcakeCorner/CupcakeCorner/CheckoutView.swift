@@ -14,6 +14,9 @@ struct CheckoutView: View {
 	@State private var confirmationMessage = ""
 	@State private var showingConfirmation = false
 
+	@State private var networkErrorDescription = ""
+	@State private var isPresentingNetworkAlert = false
+
 	var body: some View {
 		ScrollView {
 			VStack {
@@ -44,6 +47,12 @@ struct CheckoutView: View {
 		} message: {
 			Text(confirmationMessage)
 		}
+		.alert("Error occured", isPresented: $isPresentingNetworkAlert) {
+			Button("OK") {}
+		} message: {
+			Text(networkErrorDescription)
+		}
+
 	}
 
 	func placeOrder() async {
@@ -62,8 +71,13 @@ struct CheckoutView: View {
 			let decodedOrder = try JSONDecoder().decode(Order.self, from: data)
 			confirmationMessage = "Your order for \(decodedOrder.quantity)x \(Order.types[decodedOrder.type].lowercased()) cupcakes is on its way!"
 			showingConfirmation = true
-		} catch {
-			print("Checkout failed.")
+		} catch (let error) {
+			networkErrorDescription =
+				"""
+				Please check your network connection and try again later.
+				Error description for customer service: \(error.localizedDescription)
+				"""
+			isPresentingNetworkAlert = true
 		}
 	}
 }

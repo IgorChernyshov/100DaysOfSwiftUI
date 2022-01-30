@@ -20,6 +20,7 @@
 		D651633627A6A6C100306BCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D651633527A6A6C100306BCB /* ContentView.swift */; };
 		D651633927A6A8C500306BCB /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D651633827A6A8C500306BCB /* RatingView.swift */; };
 		D651633B27A6AA6700306BCB /* EmojiRaingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D651633A27A6AA6700306BCB /* EmojiRaingView.swift */; };
+		D651633D27A6C9D000306BCB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D651633C27A6C9D000306BCB /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		D651633527A6A6C100306BCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D651633827A6A8C500306BCB /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		D651633A27A6AA6700306BCB /* EmojiRaingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRaingView.swift; sourceTree = "<group>"; };
+		D651633C27A6C9D000306BCB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +94,9 @@
 			children = (
 				D651633527A6A6C100306BCB /* ContentView.swift */,
 				D651633327A6A3EA00306BCB /* AddBookView.swift */,
-				D651633827A6A8C500306BCB /* RatingView.swift */,
+				D651633C27A6C9D000306BCB /* DetailView.swift */,
 				D651633A27A6AA6700306BCB /* EmojiRaingView.swift */,
+				D651633827A6A8C500306BCB /* RatingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D651632D27A5866000306BCB /* DataController.swift in Sources */,
+				D651633D27A6C9D000306BCB /* DetailView.swift in Sources */,
 				D651631627A57C6700306BCB /* PushButtonView.swift in Sources */,
 				D651633027A58CC500306BCB /* ManagedObjectContextTestView.swift in Sources */,
 				D651633927A6A8C500306BCB /* RatingView.swift in Sources */,

@@ -50,15 +50,21 @@ struct AddBookView: View {
 						newBook.rating = Int16(rating)
 						newBook.genre = genre
 						newBook.review = review
+						newBook.date = Date.now
 
 						try? moc.save()
 						dismiss()
 					}
+					.disabled(isFormNotFilled)
 				}
 			}
 			.navigationTitle("Add Book")
 		}
     }
+
+	var isFormNotFilled: Bool {
+		title.isEmpty || author.isEmpty || genre.isEmpty || review.isEmpty
+	}
 }
 
 struct AddBookView_Previews: PreviewProvider {

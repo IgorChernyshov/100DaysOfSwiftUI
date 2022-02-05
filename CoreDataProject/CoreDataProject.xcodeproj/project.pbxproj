@@ -25,6 +25,7 @@
 		D6CA3D1A27AE580F00F2FBBC /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA3D1627AE580F00F2FBBC /* Country+CoreDataClass.swift */; };
 		D6CA3D1B27AE580F00F2FBBC /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA3D1727AE580F00F2FBBC /* Country+CoreDataProperties.swift */; };
 		D6CA3D1D27AE597E00F2FBBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA3D1C27AE597E00F2FBBC /* ContentView.swift */; };
+		D6CA3D1F27AE665400F2FBBC /* FilterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA3D1E27AE665400F2FBBC /* FilterType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		D6CA3D1627AE580F00F2FBBC /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D6CA3D1727AE580F00F2FBBC /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D6CA3D1C27AE597E00F2FBBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D6CA3D1E27AE665400F2FBBC /* FilterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				D6CA3D1C27AE597E00F2FBBC /* ContentView.swift */,
 				D65544E127AC3E1C0003703A /* EncapsulatedFetchRequestView.swift */,
 				D65544E427AC3E970003703A /* FilteredList.swift */,
+				D6CA3D1E27AE665400F2FBBC /* FilterType.swift */,
 				D65544DB27AC3A4C0003703A /* PredicatesView.swift */,
 				D677198527AAB2E900C9D654 /* CoreDataProjectApp.swift */,
 				D677198727AAB2E900C9D654 /* UniqueCoreDataEntriesView.swift */,
@@ -196,6 +199,7 @@
 				D6CA3D1B27AE580F00F2FBBC /* Country+CoreDataProperties.swift in Sources */,
 				D65544DC27AC3A4C0003703A /* PredicatesView.swift in Sources */,
 				D6CA3D1927AE580F00F2FBBC /* Candy+CoreDataProperties.swift in Sources */,
+				D6CA3D1F27AE665400F2FBBC /* FilterType.swift in Sources */,
 				D677199427AAB38700C9D654 /* DataController.swift in Sources */,
 				D65544E527AC3E970003703A /* FilteredList.swift in Sources */,
 				D65544E227AC3E1C0003703A /* EncapsulatedFetchRequestView.swift in Sources */,

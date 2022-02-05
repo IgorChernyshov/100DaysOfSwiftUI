@@ -11,10 +11,11 @@ struct EncapsulatedFetchRequestView: View {
 
 	@Environment(\.managedObjectContext) var moc
 	@State private var lastNameFilter = "A"
+	@State private var filterType = FilterType.beginsWith
 
     var body: some View {
 		VStack {
-			FilteredList(filterKey: "lastName", filterValue: lastNameFilter) { (singer: Singer) in
+			FilteredList(filterKey: "lastName", filterType: filterType, filterValue: lastNameFilter, sortDescriptors: []) { (singer: Singer) in
 				Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
 			}
 
@@ -40,6 +41,12 @@ struct EncapsulatedFetchRequestView: View {
 
 			Button("Show S") {
 				lastNameFilter = "S"
+			}
+
+			Picker("Filter type", selection: $filterType) {
+				ForEach(FilterType.allCases, id: \.self) {
+					Text($0.rawValue)
+				}
 			}
 		}
     }

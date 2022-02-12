@@ -7,16 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6510B8A27B7EEF600B018F9 /* ImagePickerSaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6510B8927B7EEF600B018F9 /* ImagePickerSaverView.swift */; };
+		D6510B8C27B7EF3500B018F9 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6510B8B27B7EF3500B018F9 /* ImagePicker.swift */; };
+		D6510B8E27B7F42100B018F9 /* ImagePicker.Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6510B8D27B7F42100B018F9 /* ImagePicker.Coordinator.swift */; };
+		D658354F27BCDBAA00B6564F /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D658354E27BCDBAA00B6564F /* ImageSaver.swift */; };
+		D658355127BCDCDA00B6564F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D658355027BCDCDA00B6564F /* ContentView.swift */; };
 		D699E91827AFBC6700169BA4 /* InstafilterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D699E91727AFBC6700169BA4 /* InstafilterApp.swift */; };
-		D699E91A27AFBC6700169BA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D699E91927AFBC6700169BA4 /* ContentView.swift */; };
+		D699E91A27AFBC6700169BA4 /* CIImageExamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D699E91927AFBC6700169BA4 /* CIImageExamplesView.swift */; };
 		D699E91C27AFBC6800169BA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D699E91B27AFBC6800169BA4 /* Assets.xcassets */; };
 		D699E91F27AFBC6800169BA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D699E91E27AFBC6800169BA4 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D6510B8927B7EEF600B018F9 /* ImagePickerSaverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerSaverView.swift; sourceTree = "<group>"; };
+		D6510B8B27B7EF3500B018F9 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		D6510B8D27B7F42100B018F9 /* ImagePicker.Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.Coordinator.swift; sourceTree = "<group>"; };
+		D658354E27BCDBAA00B6564F /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		D658355027BCDCDA00B6564F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D699E91427AFBC6700169BA4 /* Instafilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instafilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D699E91727AFBC6700169BA4 /* InstafilterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstafilterApp.swift; sourceTree = "<group>"; };
-		D699E91927AFBC6700169BA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D699E91927AFBC6700169BA4 /* CIImageExamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIImageExamplesView.swift; sourceTree = "<group>"; };
 		D699E91B27AFBC6800169BA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D699E91E27AFBC6800169BA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +62,12 @@
 			isa = PBXGroup;
 			children = (
 				D699E91727AFBC6700169BA4 /* InstafilterApp.swift */,
-				D699E91927AFBC6700169BA4 /* ContentView.swift */,
+				D658355027BCDCDA00B6564F /* ContentView.swift */,
+				D6510B8927B7EEF600B018F9 /* ImagePickerSaverView.swift */,
+				D6510B8B27B7EF3500B018F9 /* ImagePicker.swift */,
+				D6510B8D27B7F42100B018F9 /* ImagePicker.Coordinator.swift */,
+				D658354E27BCDBAA00B6564F /* ImageSaver.swift */,
+				D699E91927AFBC6700169BA4 /* CIImageExamplesView.swift */,
 				D699E91B27AFBC6800169BA4 /* Assets.xcassets */,
 				D699E91D27AFBC6800169BA4 /* Preview Content */,
 			);
@@ -137,8 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D699E91A27AFBC6700169BA4 /* ContentView.swift in Sources */,
+				D6510B8E27B7F42100B018F9 /* ImagePicker.Coordinator.swift in Sources */,
+				D658354F27BCDBAA00B6564F /* ImageSaver.swift in Sources */,
+				D658355127BCDCDA00B6564F /* ContentView.swift in Sources */,
+				D699E91A27AFBC6700169BA4 /* CIImageExamplesView.swift in Sources */,
+				D6510B8C27B7EF3500B018F9 /* ImagePicker.swift in Sources */,
 				D699E91827AFBC6700169BA4 /* InstafilterApp.swift in Sources */,
+				D6510B8A27B7EEF600B018F9 /* ImagePickerSaverView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +292,7 @@
 				DEVELOPMENT_TEAM = 73YFFUD89Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save the filtered photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +322,7 @@
 				DEVELOPMENT_TEAM = 73YFFUD89Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save the filtered photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -2,42 +2,19 @@
 //  ContentView.swift
 //  BucketList
 //
-//  Created by Igor Chernyshov on 26.02.2022.
+//  Created by Igor Chernyshov on 27.02.2022.
 //
 
 import SwiftUI
 
 struct ContentView: View {
-
-	@State private var loadingState = LoadingState.loading
-
-	var body: some View {
-		Group {
-			if loadingState == .loading {
-				LoadingView()
-			} else if loadingState == .success {
-				SuccessView()
-			} else if loadingState == .failed {
-				FailedView()
-			}
-		}
-		.onTapGesture {
-			let str = "Test Message"
-			let url = FileManager.documentsDirectory().appendingPathComponent("message.txt")
-
-			do {
-				try str.write(to: url, atomically: true, encoding: .utf8)
-				let input = try String(contentsOf: url)
-				print(input)
-			} catch {
-				print(error.localizedDescription)
-			}
-		}
-	}
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
-	static var previews: some View {
-		ContentView()
-	}
+    static var previews: some View {
+        ContentView()
+    }
 }

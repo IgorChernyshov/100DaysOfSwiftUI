@@ -23,7 +23,7 @@ struct ExampleView: View {
 		}
 		.onTapGesture {
 			let str = "Test Message"
-			let url = FileManager.documentsDirectory().appendingPathComponent("message.txt")
+			let url = FileManager.documentsDirectory.appendingPathComponent("message.txt")
 
 			do {
 				try str.write(to: url, atomically: true, encoding: .utf8)

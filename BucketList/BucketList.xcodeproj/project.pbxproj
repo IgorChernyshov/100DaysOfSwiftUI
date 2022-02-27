@@ -19,6 +19,7 @@
 		D687C13327CB595100519F68 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D687C13227CB595100519F68 /* Location.swift */; };
 		D687C13527CB609A00519F68 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D687C13427CB609A00519F68 /* EditView.swift */; };
 		D687C13727CB8A4700519F68 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D687C13627CB8A4700519F68 /* Result.swift */; };
+		D687C13B27CB8E5900519F68 /* ContentView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D687C13A27CB8E5900519F68 /* ContentView.ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		D687C13227CB595100519F68 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		D687C13427CB609A00519F68 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		D687C13627CB8A4700519F68 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		D687C13A27CB8E5900519F68 /* ContentView.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			children = (
 				D60AD67527CA8B5E00F0A8A7 /* BucketListApp.swift */,
 				D687C12F27CB56DD00519F68 /* ContentView.swift */,
+				D687C13A27CB8E5900519F68 /* ContentView.ViewModel.swift */,
 				D687C13427CB609A00519F68 /* EditView.swift */,
 				D687C13227CB595100519F68 /* Location.swift */,
 				D687C13627CB8A4700519F68 /* Result.swift */,
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D60AD68427CA8B8900F0A8A7 /* LoadingState.swift in Sources */,
+				D687C13B27CB8E5900519F68 /* ContentView.ViewModel.swift in Sources */,
 				D60AD68827CA8DE400F0A8A7 /* ExampleMapView.swift in Sources */,
 				D687C13327CB595100519F68 /* Location.swift in Sources */,
 				D687C13027CB56DD00519F68 /* ContentView.swift in Sources */,
@@ -312,7 +316,7 @@
 				DEVELOPMENT_TEAM = 73YFFUD89Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate to unlock your places";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -342,7 +346,7 @@
 				DEVELOPMENT_TEAM = 73YFFUD89Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate to unlock your places";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

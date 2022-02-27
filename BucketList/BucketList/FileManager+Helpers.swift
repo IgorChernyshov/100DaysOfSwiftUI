@@ -8,7 +8,7 @@
 import Foundation
 
 extension FileManager {
-	static func documentsDirectory() -> URL {
+	static var documentsDirectory: URL {
 		FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
 	}
 }

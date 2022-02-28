@@ -20,6 +20,7 @@
 		D687C13527CB609A00519F68 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D687C13427CB609A00519F68 /* EditView.swift */; };
 		D687C13727CB8A4700519F68 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D687C13627CB8A4700519F68 /* Result.swift */; };
 		D687C13B27CB8E5900519F68 /* ContentView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D687C13A27CB8E5900519F68 /* ContentView.ViewModel.swift */; };
+		D687C13D27CBBD9D00519F68 /* EditView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D687C13C27CBBD9D00519F68 /* EditView.ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		D687C13427CB609A00519F68 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		D687C13627CB8A4700519F68 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		D687C13A27CB8E5900519F68 /* ContentView.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.ViewModel.swift; sourceTree = "<group>"; };
+		D687C13C27CBBD9D00519F68 /* EditView.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				D687C12F27CB56DD00519F68 /* ContentView.swift */,
 				D687C13A27CB8E5900519F68 /* ContentView.ViewModel.swift */,
 				D687C13427CB609A00519F68 /* EditView.swift */,
+				D687C13C27CBBD9D00519F68 /* EditView.ViewModel.swift */,
 				D687C13227CB595100519F68 /* Location.swift */,
 				D687C13627CB8A4700519F68 /* Result.swift */,
 				D687C13127CB56E100519F68 /* Examples */,
@@ -174,6 +177,7 @@
 			files = (
 				D60AD68427CA8B8900F0A8A7 /* LoadingState.swift in Sources */,
 				D687C13B27CB8E5900519F68 /* ContentView.ViewModel.swift in Sources */,
+				D687C13D27CBBD9D00519F68 /* EditView.ViewModel.swift in Sources */,
 				D60AD68827CA8DE400F0A8A7 /* ExampleMapView.swift in Sources */,
 				D687C13327CB595100519F68 /* Location.swift in Sources */,
 				D687C13027CB56DD00519F68 /* ContentView.swift in Sources */,

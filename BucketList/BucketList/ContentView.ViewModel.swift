@@ -12,13 +12,15 @@ extension ContentView {
 
 	@MainActor final class ViewModel: ObservableObject {
 
-		@Published var isUnlocked = false
+		@Published var isUnlocked = true
 
 		@Published var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50, longitude: 0), span: MKCoordinateSpan(latitudeDelta: 25, longitudeDelta: 25))
 		@Published private(set) var locations: [Location]
 		@Published var selectedPlace: Location?
 
-		let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedPlaces")
+		@Published var isShowingAuthenticationError = false
+
+		private let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedPlaces")
 
 		init() {
 			do {
@@ -63,11 +65,12 @@ extension ContentView {
 				context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
 
 					if success {
-						Task { @MainActor in
-							self.isUnlocked = true
+						Task { @MainActor [weak self] in
+							self?.isUnlocked = true
 						}
 					} else {
-						// error
+						self.isUnlocked = false
+						self.isShowingAuthenticationError = true
 					}
 				}
 			} else {

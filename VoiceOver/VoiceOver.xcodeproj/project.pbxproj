@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		D698479A27D242D300B09F55 /* VoiceOverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D698479927D242D300B09F55 /* VoiceOverApp.swift */; };
-		D698479C27D242D300B09F55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D698479B27D242D300B09F55 /* ContentView.swift */; };
+		D698479C27D242D300B09F55 /* CustomVoiceOverLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D698479B27D242D300B09F55 /* CustomVoiceOverLabels.swift */; };
 		D698479E27D242D500B09F55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D698479D27D242D500B09F55 /* Assets.xcassets */; };
 		D69847A127D242D500B09F55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D69847A027D242D500B09F55 /* Preview Assets.xcassets */; };
+		D69847A827D286BD00B09F55 /* CustomVoiceOverActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69847A727D286BD00B09F55 /* CustomVoiceOverActionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D698479627D242D300B09F55 /* VoiceOver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceOver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D698479927D242D300B09F55 /* VoiceOverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceOverApp.swift; sourceTree = "<group>"; };
-		D698479B27D242D300B09F55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D698479B27D242D300B09F55 /* CustomVoiceOverLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVoiceOverLabels.swift; sourceTree = "<group>"; };
 		D698479D27D242D500B09F55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D69847A027D242D500B09F55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D69847A727D286BD00B09F55 /* CustomVoiceOverActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVoiceOverActionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				D698479927D242D300B09F55 /* VoiceOverApp.swift */,
-				D698479B27D242D300B09F55 /* ContentView.swift */,
+				D69847A727D286BD00B09F55 /* CustomVoiceOverActionsView.swift */,
+				D698479B27D242D300B09F55 /* CustomVoiceOverLabels.swift */,
 				D698479D27D242D500B09F55 /* Assets.xcassets */,
 				D698479F27D242D500B09F55 /* Preview Content */,
 			);
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D698479C27D242D300B09F55 /* ContentView.swift in Sources */,
+				D698479C27D242D300B09F55 /* CustomVoiceOverLabels.swift in Sources */,
 				D698479A27D242D300B09F55 /* VoiceOverApp.swift in Sources */,
+				D69847A827D286BD00B09F55 /* CustomVoiceOverActionsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -28,6 +28,7 @@ struct CheckoutView: View {
 					ProgressView()
 				}
 				.frame(height: 233)
+				.accessibilityRemoveTraits(.isImage)
 
 				Text("Your total is \(orderWrapper.order.cost, format: .currency(code: "USD"))")
 					.font(.title)

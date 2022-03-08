@@ -9,7 +9,7 @@ import PhotosUI
 import SwiftUI
 
 struct ImagePicker {
-	@Binding var photo: Photo?
+	@Binding var image: UIImage?
 }
 
 extension ImagePicker: UIViewControllerRepresentable {

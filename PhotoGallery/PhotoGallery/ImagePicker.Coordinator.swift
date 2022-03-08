@@ -26,8 +26,7 @@ extension ImagePicker.Coordinator: PHPickerViewControllerDelegate {
 
 		guard let provider = results.first?.itemProvider, provider.canLoadObject(ofClass: UIImage.self) else { return }
 		provider.loadObject(ofClass: UIImage.self) { image, _ in
-			guard let photo = image as? UIImage else { return }
-			self.parent.photo = Photo(name: "", photo: photo)
+			self.parent.image = image as? UIImage
 		}
 	}
 }

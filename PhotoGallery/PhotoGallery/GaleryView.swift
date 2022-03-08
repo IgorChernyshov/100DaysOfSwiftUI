@@ -9,10 +9,16 @@ import SwiftUI
 
 struct GaleryView: View {
 
-	@State private var isShowingImagePicker = false
+	@State private var galeryPhotos: [Photo] = []
 
-	@State private var galeryPhotos = [Photo]()
-	@State private var newPhoto: Photo?
+	init() {
+		do {
+			let data = try Data(contentsOf: FileManager.savedPhotosPath)
+			galeryPhotos = try JSONDecoder().decode([Photo].self, from: data)
+		} catch {
+			galeryPhotos = []
+		}
+	}
 
     var body: some View {
 		NavigationView {
@@ -28,16 +34,11 @@ struct GaleryView: View {
 							.font(.body)
 					}
 				}
-				Button("Add photo") {
-					isShowingImagePicker = true
+				NavigationLink("Add photo") {
+					AddPhotoView()
 				}
 			}
 			.navigationTitle("Photo Galery")
-			.sheet(isPresented: $isShowingImagePicker, onDismiss: {
-				if let newPhoto = newPhoto { galeryPhotos.append(newPhoto) }
-			}) {
-				ImagePicker(photo: $newPhoto)
-			}
 		}
     }
 }

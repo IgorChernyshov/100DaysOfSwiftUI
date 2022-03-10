@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  HotProspects
 //
-//  Created by Igor Chernyshov on 08.03.2022.
+//  Created by Igor Chernyshov on 10.03.2022.
 //
 
 import SwiftUI

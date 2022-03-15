@@ -11,17 +11,15 @@ import SwiftUI
 
 	@Published private(set) var people: [Prospect]
 
-	private let saveKey = "SavedData"
+	private let savePath = FileManager.documentsDirectory().appendingPathComponent("SavedData")
 
 	init() {
-		if let data = UserDefaults.standard.data(forKey: saveKey) {
-			if let decoded = try? JSONDecoder().decode([Prospect].self, from: data) {
-				people = decoded
-				return
-			}
+		do {
+			let data = try Data(contentsOf: savePath)
+			people = try JSONDecoder().decode([Prospect].self, from: data)
+		} catch {
+			people = []
 		}
-
-		people = []
 	}
 
 	func toggle(_ prospect: Prospect) {
@@ -35,9 +33,20 @@ import SwiftUI
 		save()
 	}
 
+	func sortPeopleByName() {
+		people.sort(by: { $0.name > $1.name })
+	}
+
+	func sortPeopleByMet() {
+		people.sort(by: { $0.isContacted && !$1.isContacted })
+	}
+
 	private func save() {
-		if let encoded = try? JSONEncoder().encode(people) {
-			UserDefaults.standard.set(encoded, forKey: saveKey)
+		do {
+			let encodedData = try? JSONEncoder().encode(people)
+			try encodedData?.write(to: savePath, options: [.atomic, .completeFileProtection])
+		} catch {
+			print("Cannot save data")
 		}
 	}
 }

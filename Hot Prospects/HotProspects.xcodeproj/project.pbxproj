@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60163FD27E0D921002A2FEE /* FileManager+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60163FC27E0D921002A2FEE /* FileManager+Helpers.swift */; };
 		D68491D427D9CDB6003423D4 /* ContextMenusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68491D327D9CDB6003423D4 /* ContextMenusView.swift */; };
 		D68491D627D9CF28003423D4 /* SwipeActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68491D527D9CF28003423D4 /* SwipeActionsView.swift */; };
 		D68491D827D9CFC2003423D4 /* LocalNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68491D727D9CFC2003423D4 /* LocalNotificationsView.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D60163FC27E0D921002A2FEE /* FileManager+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Helpers.swift"; sourceTree = "<group>"; };
 		D68491D327D9CDB6003423D4 /* ContextMenusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenusView.swift; sourceTree = "<group>"; };
 		D68491D527D9CF28003423D4 /* SwipeActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionsView.swift; sourceTree = "<group>"; };
 		D68491D727D9CFC2003423D4 /* LocalNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationsView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				D68491E727DB25A1003423D4 /* MeView.swift */,
 				D68491EB27DB2852003423D4 /* Prospects.swift */,
 				D6964D8F27DCE3CD00C77DF0 /* ImageSaver.swift */,
+				D60163FC27E0D921002A2FEE /* FileManager+Helpers.swift */,
 				D68491E027D9D347003423D4 /* Examples */,
 				D6A8748627D7497A009BA98C /* Assets.xcassets */,
 				D6A8748827D7497A009BA98C /* Preview Content */,
@@ -205,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D60163FD27E0D921002A2FEE /* FileManager+Helpers.swift in Sources */,
 				D6A8749927D88449009BA98C /* DelayedUpdater.swift in Sources */,
 				D6A8748527D74978009BA98C /* TabViewExamplesView.swift in Sources */,
 				D68491DF27D9D344003423D4 /* ContentView.swift in Sources */,

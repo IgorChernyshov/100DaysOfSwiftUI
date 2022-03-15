@@ -47,11 +47,23 @@ struct ProspectsView: View {
 		NavigationView {
 			List {
 				ForEach(filteredProspects) { prospect in
-					VStack(alignment: .leading) {
-						Text(prospect.name)
-							.font(.headline)
-						Text(prospect.emailAddress)
-							.foregroundColor(.secondary)
+					HStack {
+						VStack(alignment: .leading) {
+							Text(prospect.name)
+								.font(.headline)
+							Text(prospect.emailAddress)
+								.foregroundColor(.secondary)
+						}
+
+						Spacer ()
+
+						if filter == .none {
+							if prospect.isContacted {
+								Image(systemName: "person.crop.circle.fill.badge.checkmark")
+							} else {
+								Image(systemName: "person.crop.circle.badge.xmark")
+							}
+						}
 					}
 					.swipeActions {
 						if prospect.isContacted {
@@ -81,10 +93,26 @@ struct ProspectsView: View {
 			}
 			.navigationTitle(title)
 			.toolbar {
-				Button {
-					isShowingScanner = true
-				} label: {
-					Label("Scan", systemImage: "qrcode.viewfinder")
+				ToolbarItem(placement: .navigationBarTrailing) {
+					Image(systemName: "arrow.up.arrow.down")
+						.foregroundColor(.blue)
+						.contextMenu {
+							Button("Sort by name") {
+								prospects.sortPeopleByName()
+							}
+
+							Button("Sort by met") {
+								prospects.sortPeopleByMet()
+							}
+						}
+				}
+
+				ToolbarItem(placement: .navigationBarTrailing) {
+					Button {
+						isShowingScanner = true
+					} label: {
+						Label("Scan", systemImage: "qrcode.viewfinder")
+					}
 				}
 			}
 			.sheet(isPresented: $isShowingScanner) {

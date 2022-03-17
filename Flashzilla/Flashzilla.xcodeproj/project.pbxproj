@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6C7875727E1B36C003BAF23 /* FlashzillaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C7875627E1B36C003BAF23 /* FlashzillaApp.swift */; };
+		D6C7875927E1B36C003BAF23 /* GestureExamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C7875827E1B36C003BAF23 /* GestureExamplesView.swift */; };
+		D6C7875B27E1B36D003BAF23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6C7875A27E1B36D003BAF23 /* Assets.xcassets */; };
+		D6C7875E27E1B36D003BAF23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6C7875D27E1B36D003BAF23 /* Preview Assets.xcassets */; };
+		D6C7876527E1B84B003BAF23 /* CombinedGesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C7876427E1B84B003BAF23 /* CombinedGesturesView.swift */; };
+		D6C7876727E1B916003BAF23 /* BasicHapticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C7876627E1B916003BAF23 /* BasicHapticView.swift */; };
+		D6C7876A27E1BD17003BAF23 /* AdvancedHapticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C7876927E1BD17003BAF23 /* AdvancedHapticView.swift */; };
+		D6C7876C27E1C30F003BAF23 /* HitTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C7876B27E1C30F003BAF23 /* HitTestView.swift */; };
+		D6C7877027E30DC2003BAF23 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C7876F27E30DC2003BAF23 /* TimerView.swift */; };
+		D6C7877227E30FAA003BAF23 /* AppStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C7877127E30FAA003BAF23 /* AppStateView.swift */; };
+		D6C7877427E31268003BAF23 /* AccessibilityFeaturesSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C7877327E31268003BAF23 /* AccessibilityFeaturesSupportView.swift */; };
+		D6C7877627E314C2003BAF23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C7877527E314C2003BAF23 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D6C7875327E1B36C003BAF23 /* Flashzilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashzilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6C7875627E1B36C003BAF23 /* FlashzillaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashzillaApp.swift; sourceTree = "<group>"; };
+		D6C7875827E1B36C003BAF23 /* GestureExamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureExamplesView.swift; sourceTree = "<group>"; };
+		D6C7875A27E1B36D003BAF23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6C7875D27E1B36D003BAF23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D6C7876427E1B84B003BAF23 /* CombinedGesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedGesturesView.swift; sourceTree = "<group>"; };
+		D6C7876627E1B916003BAF23 /* BasicHapticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicHapticView.swift; sourceTree = "<group>"; };
+		D6C7876927E1BD17003BAF23 /* AdvancedHapticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedHapticView.swift; sourceTree = "<group>"; };
+		D6C7876B27E1C30F003BAF23 /* HitTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitTestView.swift; sourceTree = "<group>"; };
+		D6C7876F27E30DC2003BAF23 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		D6C7877127E30FAA003BAF23 /* AppStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateView.swift; sourceTree = "<group>"; };
+		D6C7877327E31268003BAF23 /* AccessibilityFeaturesSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityFeaturesSupportView.swift; sourceTree = "<group>"; };
+		D6C7877527E314C2003BAF23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6C7875027E1B36C003BAF23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6C7874A27E1B36C003BAF23 = {
+			isa = PBXGroup;
+			children = (
+				D6C7875527E1B36C003BAF23 /* Flashzilla */,
+				D6C7875427E1B36C003BAF23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6C7875427E1B36C003BAF23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6C7875327E1B36C003BAF23 /* Flashzilla.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6C7875527E1B36C003BAF23 /* Flashzilla */ = {
+			isa = PBXGroup;
+			children = (
+				D6C7875627E1B36C003BAF23 /* FlashzillaApp.swift */,
+				D6C7877527E314C2003BAF23 /* ContentView.swift */,
+				D6C7876827E1B91C003BAF23 /* Examples */,
+				D6C7875A27E1B36D003BAF23 /* Assets.xcassets */,
+				D6C7875C27E1B36D003BAF23 /* Preview Content */,
+			);
+			path = Flashzilla;
+			sourceTree = "<group>";
+		};
+		D6C7875C27E1B36D003BAF23 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D6C7875D27E1B36D003BAF23 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D6C7876827E1B91C003BAF23 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				D6C7877327E31268003BAF23 /* AccessibilityFeaturesSupportView.swift */,
+				D6C7876927E1BD17003BAF23 /* AdvancedHapticView.swift */,
+				D6C7877127E30FAA003BAF23 /* AppStateView.swift */,
+				D6C7876627E1B916003BAF23 /* BasicHapticView.swift */,
+				D6C7876427E1B84B003BAF23 /* CombinedGesturesView.swift */,
+				D6C7875827E1B36C003BAF23 /* GestureExamplesView.swift */,
+				D6C7876B27E1C30F003BAF23 /* HitTestView.swift */,
+				D6C7876F27E30DC2003BAF23 /* TimerView.swift */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6C7875227E1B36C003BAF23 /* Flashzilla */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6C7876127E1B36D003BAF23 /* Build configuration list for PBXNativeTarget "Flashzilla" */;
+			buildPhases = (
+				D6C7874F27E1B36C003BAF23 /* Sources */,
+				D6C7875027E1B36C003BAF23 /* Frameworks */,
+				D6C7875127E1B36C003BAF23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flashzilla;
+			productName = Flashzilla;
+			productReference = D6C7875327E1B36C003BAF23 /* Flashzilla.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6C7874B27E1B36C003BAF23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					D6C7875227E1B36C003BAF23 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = D6C7874E27E1B36C003BAF23 /* Build configuration list for PBXProject "Flashzilla" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6C7874A27E1B36C003BAF23;
+			productRefGroup = D6C7875427E1B36C003BAF23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6C7875227E1B36C003BAF23 /* Flashzilla */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6C7875127E1B36C003BAF23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C7875E27E1B36D003BAF23 /* Preview Assets.xcassets in Resources */,
+				D6C7875B27E1B36D003BAF23 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6C7874F27E1B36C003BAF23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C7875927E1B36C003BAF23 /* GestureExamplesView.swift in Sources */,
+				D6C7876A27E1BD17003BAF23 /* AdvancedHapticView.swift in Sources */,
+				D6C7877227E30FAA003BAF23 /* AppStateView.swift in Sources */,
+				D6C7877027E30DC2003BAF23 /* TimerView.swift in Sources */,
+				D6C7876C27E1C30F003BAF23 /* HitTestView.swift in Sources */,
+				D6C7877427E31268003BAF23 /* AccessibilityFeaturesSupportView.swift in Sources */,
+				D6C7877627E314C2003BAF23 /* ContentView.swift in Sources */,
+				D6C7875727E1B36C003BAF23 /* FlashzillaApp.swift in Sources */,
+				D6C7876727E1B916003BAF23 /* BasicHapticView.swift in Sources */,
+				D6C7876527E1B84B003BAF23 /* CombinedGesturesView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D6C7875F27E1B36D003BAF23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D6C7876027E1B36D003BAF23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6C7876227E1B36D003BAF23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Flashzilla/Preview Content\"";
+				DEVELOPMENT_TEAM = 73YFFUD89Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.igor.chernyshov.Flashzilla;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D6C7876327E1B36D003BAF23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Flashzilla/Preview Content\"";
+				DEVELOPMENT_TEAM = 73YFFUD89Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.igor.chernyshov.Flashzilla;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6C7874E27E1B36C003BAF23 /* Build configuration list for PBXProject "Flashzilla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6C7875F27E1B36D003BAF23 /* Debug */,
+				D6C7876027E1B36D003BAF23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6C7876127E1B36D003BAF23 /* Build configuration list for PBXNativeTarget "Flashzilla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6C7876227E1B36D003BAF23 /* Debug */,
+				D6C7876327E1B36D003BAF23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6C7874B27E1B36C003BAF23 /* Project object */;
+}

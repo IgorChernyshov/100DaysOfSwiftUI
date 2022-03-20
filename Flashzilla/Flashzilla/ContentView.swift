@@ -12,7 +12,7 @@ struct ContentView: View {
 	@Environment(\.accessibilityDifferentiateWithoutColor) var differentiateWithoutColor
 	@Environment(\.accessibilityVoiceOverEnabled) var voiceOverEnabled
 
-	@State private var cards = [Card]()
+	@EnvironmentObject var cards: Cards
 
 	@State private var timeRemaining = 100
 	let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -38,20 +38,20 @@ struct ContentView: View {
 					.clipShape(Capsule())
 
 				ZStack {
-					ForEach(0..<cards.count, id: \.self) { index in
-						CardView(card: cards[index]) {
+					ForEach(0..<cards.cards.count, id: \.self) { index in
+						CardView(card: cards.cards[index]) {
 						   withAnimation {
-							   removeCard(at: index)
+							   popCard(at: index)
 						   }
 						}
-						.stacked(at: index, in: cards.count)
-						.allowsHitTesting(index == cards.count - 1)
-						.accessibilityHidden(index < cards.count - 1)
+						.stacked(at: index, in: cards.cards.count)
+						.allowsHitTesting(index == cards.cards.count - 1)
+						.accessibilityHidden(index < cards.cards.count - 1)
 					}
 				}
 				.allowsHitTesting(timeRemaining > 0)
 
-				if cards.isEmpty {
+				if cards.cards.isEmpty {
 					Button("Start Again", action: resetCards)
 						.padding()
 						.background(.white)
@@ -87,7 +87,7 @@ struct ContentView: View {
 					HStack {
 						Button {
 							withAnimation {
-								removeCard(at: cards.count - 1)
+								popCard(at: cards.cards.count - 1)
 							}
 						} label: {
 							Image(systemName: "xmark.circle")
@@ -102,7 +102,7 @@ struct ContentView: View {
 
 						Button {
 							withAnimation {
-								removeCard(at: cards.count - 1)
+								popCard(at: cards.cards.count - 1)
 							}
 						} label: {
 							Image(systemName: "checkmark.circle")
@@ -128,7 +128,7 @@ struct ContentView: View {
 		}
 		.onChange(of: scenePhase) { newPhase in
 			if newPhase == .active {
-				if cards.isEmpty == false {
+				if cards.cards.isEmpty == false {
 					isActive = true
 				}
 			} else {
@@ -141,12 +141,12 @@ struct ContentView: View {
 		.onAppear(perform: resetCards)
 	}
 
-	private func removeCard(at index: Int) {
+	private func popCard(at index: Int) {
 		guard index >= 0 else { return }
 
-		cards.remove(at: index)
+		cards.pop(at: index)
 
-		if cards.isEmpty {
+		if cards.cards.isEmpty {
 			isActive = false
 		}
 	}
@@ -154,15 +154,7 @@ struct ContentView: View {
 	private func resetCards() {
 		timeRemaining = 100
 		isActive = true
-		loadData()
-	}
-
-	private func loadData() {
-		if let data = UserDefaults.standard.data(forKey: "Cards") {
-			if let decoded = try? JSONDecoder().decode([Card].self, from: data) {
-				cards = decoded
-			}
-		}
+		cards.load()
 	}
 }
 

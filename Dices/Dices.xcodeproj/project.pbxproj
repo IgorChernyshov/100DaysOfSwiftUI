@@ -13,6 +13,7 @@
 		D68C0DB627EF03410076EFDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D68C0DB527EF03410076EFDC /* Preview Assets.xcassets */; };
 		D68C0DBF27EF03960076EFDC /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68C0DBE27EF03960076EFDC /* DiceView.swift */; };
 		D68C0DC127EF05BF0076EFDC /* DotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68C0DC027EF05BF0076EFDC /* DotsView.swift */; };
+		D68C0DC327EF15910076EFDC /* ShakeDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68C0DC227EF15910076EFDC /* ShakeDetection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		D68C0DB527EF03410076EFDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D68C0DBE27EF03960076EFDC /* DiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
 		D68C0DC027EF05BF0076EFDC /* DotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsView.swift; sourceTree = "<group>"; };
+		D68C0DC227EF15910076EFDC /* ShakeDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeDetection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				D68C0DB027EF03400076EFDC /* ContentView.swift */,
 				D68C0DBE27EF03960076EFDC /* DiceView.swift */,
 				D68C0DC027EF05BF0076EFDC /* DotsView.swift */,
+				D68C0DC227EF15910076EFDC /* ShakeDetection.swift */,
 				D68C0DB227EF03410076EFDC /* Assets.xcassets */,
 				D68C0DB427EF03410076EFDC /* Preview Content */,
 			);
@@ -146,6 +149,7 @@
 				D68C0DBF27EF03960076EFDC /* DiceView.swift in Sources */,
 				D68C0DB127EF03400076EFDC /* ContentView.swift in Sources */,
 				D68C0DC127EF05BF0076EFDC /* DotsView.swift in Sources */,
+				D68C0DC327EF15910076EFDC /* ShakeDetection.swift in Sources */,
 				D68C0DAF27EF03400076EFDC /* DicesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +287,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -294,7 +299,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,6 +317,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,7 +329,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

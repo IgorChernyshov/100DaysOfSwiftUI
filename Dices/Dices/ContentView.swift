@@ -14,16 +14,14 @@ struct ContentView: View {
 
 	@State private var rollResults = [Int]()
 
+	private let hapticEngine = UINotificationFeedbackGenerator()
+
 	var body: some View {
 		VStack(spacing: 20) {
 			DiceView(rolledNumber: rolledNumber)
-				.rotationEffect(.degrees(Double(numberOfRolls * 90)))
+				.rotationEffect(.degrees(Double(numberOfRolls * 180)))
 				.onTapGesture {
-					withAnimation {
-						rolledNumber = Int.random(in: 1...6)
-						numberOfRolls += 1
-						rollResults.append(rolledNumber)
-					}
+					rollDice()
 				}
 
 			HStack(spacing: 10) {
@@ -34,11 +32,22 @@ struct ContentView: View {
 							.reversed()
 							.map { $0.description }
 							.joined(separator: ", "))
-						.animation(nil, value: rollResults)
 				}
 			}
 			.padding()
 		}
+		.onShake {
+			rollDice()
+		}
+	}
+
+	private func rollDice() {
+		withAnimation {
+			rolledNumber = Int.random(in: 1...6)
+			numberOfRolls += 1
+		}
+		rollResults.append(rolledNumber)
+		hapticEngine.notificationOccurred(.error)
 	}
 }
 

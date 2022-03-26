@@ -11,6 +11,8 @@
 		D68C0DB127EF03400076EFDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68C0DB027EF03400076EFDC /* ContentView.swift */; };
 		D68C0DB327EF03410076EFDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D68C0DB227EF03410076EFDC /* Assets.xcassets */; };
 		D68C0DB627EF03410076EFDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D68C0DB527EF03410076EFDC /* Preview Assets.xcassets */; };
+		D68C0DBF27EF03960076EFDC /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68C0DBE27EF03960076EFDC /* DiceView.swift */; };
+		D68C0DC127EF05BF0076EFDC /* DotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68C0DC027EF05BF0076EFDC /* DotsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		D68C0DB027EF03400076EFDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D68C0DB227EF03410076EFDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D68C0DB527EF03410076EFDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D68C0DBE27EF03960076EFDC /* DiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
+		D68C0DC027EF05BF0076EFDC /* DotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				D68C0DAE27EF03400076EFDC /* DicesApp.swift */,
 				D68C0DB027EF03400076EFDC /* ContentView.swift */,
+				D68C0DBE27EF03960076EFDC /* DiceView.swift */,
+				D68C0DC027EF05BF0076EFDC /* DotsView.swift */,
 				D68C0DB227EF03410076EFDC /* Assets.xcassets */,
 				D68C0DB427EF03410076EFDC /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D68C0DBF27EF03960076EFDC /* DiceView.swift in Sources */,
 				D68C0DB127EF03400076EFDC /* ContentView.swift in Sources */,
+				D68C0DC127EF05BF0076EFDC /* DotsView.swift in Sources */,
 				D68C0DAF27EF03400076EFDC /* DicesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
 
 	@State private var searchText = ""
+	@State private var sortingMode: Resort.SortMode = .default
 
 	@StateObject var favorites = Favorites()
 
@@ -23,9 +24,17 @@ struct ContentView: View {
 		}
 	}
 
-    var body: some View {
+	var resortsToDisplay: [Resort] {
+		switch sortingMode {
+		case .default: return filteredResorts
+		case .name: return filteredResorts.sorted { $0.name < $1.name }
+		case .country: return filteredResorts.sorted { $0.country < $1.country }
+		}
+	}
+
+	var body: some View {
 		NavigationView {
-			List(filteredResorts) { resort in
+			List(resortsToDisplay) { resort in
 				NavigationLink {
 					ResortView(resort: resort)
 				} label: {
@@ -61,15 +70,34 @@ struct ContentView: View {
 			}
 			.navigationTitle("Resorts")
 			.searchable(text: $searchText, prompt: "Search for a resort")
+			.toolbar {
+				ToolbarItem(placement: .navigationBarTrailing) {
+					Image(systemName: "arrow.up.arrow.down")
+						.foregroundColor(.primary)
+						.contextMenu {
+							Button("Sort by default") {
+								sortingMode = .default
+							}
+
+							Button("Sort by name") {
+								sortingMode = .name
+							}
+
+							Button("Sort by country") {
+								sortingMode = .country
+							}
+						}
+				}
+			}
 
 			WelcomeView()
 		}
 		.environmentObject(favorites)
-    }
+	}
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+	static var previews: some View {
+		ContentView()
+	}
 }

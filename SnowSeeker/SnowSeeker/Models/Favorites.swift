@@ -14,10 +14,13 @@ class Favorites: ObservableObject {
 	private let saveKey = "Favorites"
 
 	init() {
-		// load our saved data
-
-		// still here? Use an empty array
-		resorts = []
+		do {
+			let data = try Data(contentsOf: FileManager.savedFavorites)
+			resorts = try JSONDecoder().decode(Set<String>.self, from: data)
+		} catch {
+			print("No saved favorite resorts")
+			resorts = []
+		}
 	}
 
 	func contains(_ resort: Resort) -> Bool {
@@ -37,6 +40,11 @@ class Favorites: ObservableObject {
 	}
 
 	func save() {
-		// write out our data
+		do {
+			let encodedResorts = try JSONEncoder().encode(resorts)
+			try encodedResorts.write(to: FileManager.savedFavorites, options: [.atomic, .completeFileProtection])
+		} catch {
+			fatalError("Favorite resorts were not saved")
+		}
 	}
 }
